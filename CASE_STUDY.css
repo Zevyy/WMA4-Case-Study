@@ -333,3 +333,38 @@ header {
         font-size: 1.2rem;
     }
 }
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px; /* Fixed width for all cards */
+    height: 350px; /* Fixed height for all cards */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100%; /* Ensure images fit within the card */
+    height: 150px; /* Fixed height for images */
+    object-fit: contain; /* Maintain image proportions */
+    margin-bottom: 10px;
+}
+
+.product-item h3,
+.product-item p,
+.product-item button {
+    margin: 5px 0; /* Spacing between elements */
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
